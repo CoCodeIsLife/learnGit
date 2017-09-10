@@ -1,0 +1,110 @@
+//
+//  PrefixHeader.pch
+//  GameBox
+//
+//  Created by apple on 2017/8/3.
+//  Copyright © 2017年 liuyanqi. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+
+//屏幕大小
+#define SCREEN_WIDTH [[UIScreen mainScreen]bounds].size.width
+#define SCREEN_HEIGHT [[UIScreen mainScreen]bounds].size.height
+//比例换算
+#define heightS(Height)  Height * SCREEN_HEIGHT / 667
+#define widthS(Width)  Width * SCREEN_WIDTH / 375
+//颜色RGB
+#define RGBACOLOR(r,g,b,a)  [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:a]
+
+
+//**************************
+
+
+//
+//
+//
+//#define CLIENT_TYPE  @"2"
+//#define ACCESS_TOKEN @"accessToken"
+//#define TIMEOUT @"timeout"
+//#define REFRESH_TOKEN @"refreshAccessToken"
+//#define REFRESHTIMEOUT @"refreshTimeout"
+//#define USERTYPE @"AiShowUserType"
+//#define ISALREADYLOGIN @"ISReadyLogin"
+//#define PERSON @"person"
+//#define COMPANY @"company"
+//#define USERIDNUMBER @"userIdNumber"
+//#define ISHOWFIRSTOPENUSESIGN @"ishowFirstOpenUseSign"
+//#define PSWWRONGCOUNT @"pswWrongCount"
+//#define ISHOWAPPVERSION @"IShowAppVersion"
+//#define ARRAYSIGNALL @"arraySignAll"
+//#define ARRAYSIGNINUSE @"arraySignInUse"
+//#define USERGROUPLIST @"userGroupList"
+////轮播图数组
+//#define CLIENTBANNER @"clientBanner"
+//
+////企业字段
+//#define IShow_address @"IShow_address"
+//#define IShow_contact @"IShow_contact"
+//#define IShow_contactName @"IShow_contactName"
+//#define IShow_email @"IShow_email"
+//#define IShow_endTime @"IShow_endTime"
+//#define IShow_id @"IShow_id"
+//#define IShow_logo @"IShow_logo"
+//#define IShow_name @"IShow_name"
+//#define IShow_onOff @"IShow_onOff"
+//#define IShow_phone @"IShow_phone"
+//#define IShow_remark @"IShow_remark"
+//#define IShow_startTime @"IShow_startTime"
+//#define IShow_status @"IShow_status"
+//#define IShow_type @"IShow_type"
+//#define IShow_userName @"IShow_userName"
+//
+////个人新增字段
+//#define IShow_areaId @"IShow_areaId"
+//#define IShow_gender @"IShow_gender"
+//#define IShow_photo @"IShow_photo"
+//#define IShow_showName @"IShow_showName"
+//#define IShow_userLevel @"IShow_userLevel"
+//
+//
+//#define INTERNET_DOMIN      @"api.imxiu.cn:8443"      //外网服务器地址api.imxiu.cn:8443
+////#define INTERNET_DOMIN    @"192.168.0.10:8080"
+////#define INTERNET_DOMIN    @"192.168.0.125:8080"     //备用地址
+//#define URLSTR(str)       [NSString stringWithFormat: @"https://%@/ishow_api/%@", INTERNET_DOMIN, str]
+////html5链接url//http://api.imxiu.cn:8080/openmode.html
+//#define WEBURLSTR(str)       [NSString stringWithFormat: @"http://api.imxiu.cn:8080/%@",str]
+//
+//
+////********************APP字体设置
+//#define navTitleFont  [UIFont systemFontOfSize:17]
+//#define navItermFont  [UIFont systemFontOfSize:15]
+//
+//
+////存储 NSUserdefault
+//#define NSUSERDEFAULTIN(str,key)   [[NSUserDefaults standardUserDefaults] setObject:str forKey:key]
+//#define NSUSERDEFAULTOUT(key)   [[NSUserDefaults standardUserDefaults]objectForKey:key]
+//#define NSUSERDEFAULTNOW         [[NSUserDefaults standardUserDefaults]synchronize]
+//#define NSUSERDEFAULTREMOVE(key)   [[NSUserDefaults standardUserDefaults]removeObjectForKey:key]
+//
+//
+//
+////测试输出
+//#ifdef DEBUG
+//#define NSlg(...) NSLog(__VA_ARGS__)
+//#else
+//#define NSlg(...)
+//#endif
+//
+//
+//
+
+
+
+#endif /* PrefixHeader_pch */
